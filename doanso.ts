@@ -48,6 +48,23 @@ else {
                         }        
                     }
                 }
+                else {
+                    console.log('So nho qua!');
+                    luotChoi++;
+                    if(luotChoi >3) {
+                        console.log('Game over');
+                    }
+                    else {
+                        guess = Number(question('Ban thu doan lai lan nua nha: ')); 
+                        if(guess == secret) {
+                            score = 30;
+                            console.log('You Win', score, 'diem');
+                        }
+                        else {
+                            console.log('Game over');                   
+                        }        
+                    }
+                }
             }
         }
         /////////////////////
